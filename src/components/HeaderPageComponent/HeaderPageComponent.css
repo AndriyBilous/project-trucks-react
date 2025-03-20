@@ -1,4 +1,92 @@
 .header__container {
-    background-color: #376f19;
-    width: 100%;
+  background-color: #ffffff;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  overflow: hidden;
+}
+
+.left-side__container {
+  width: 40%;
+  border-right: 1px black solid;
+}
+
+.logo__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.logo__container img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.right-side__container {
+  width: 60%;
+  /* border: 1px black solid; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.contacts__item {
+  padding: 0 10px;
+  margin: 0 10px;
+  border: 1px black solid;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
+}
+
+.adress__container {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+}
+
+.adress__container p {
+  border: 1px solid black;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.navigation__container {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.header__panel__nav {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.header__button {
+  margin: 0;
+  border-radius: 0;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.header__button-last {
+  border-right: 1px solid black;
+}
+
+.header__button:hover {
+  background-color: rgb(67, 104, 56);
+  border-radius: 5px;
+  color: #fff;
 }

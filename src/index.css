@@ -26,7 +26,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-   display: flex;
+  display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -35,6 +35,11 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 button {

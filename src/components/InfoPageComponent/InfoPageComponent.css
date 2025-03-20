@@ -1,0 +1,53 @@
+.infoPage__container {
+    background-color: #877c7c;
+    width: 1400px;
+}
+
+.bloks {
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1400px;
+}
+
+
+@media (max-width: 1400px) {
+    .infoPage__container {
+      width: 1250px;
+    }
+
+    .bloks {
+        width: 1024px;
+      }
+  }
+
+@media (max-width: 1250px) {
+    .infoPage__container {
+      width: 1024px;
+    }
+
+    .bloks {
+        width: 1024px;
+      }
+  }
+  
+  @media (max-width: 1024px) {
+    .infoPage__container {
+      width: 800px;
+    }
+
+    .bloks {
+        width: 800px;
+      }
+  }
+  
+  @media (max-width: 1024px) {
+    .infoPage__container {
+      width: 640px;
+    }
+
+    .bloks {
+        width: 640px;
+      }
+  }

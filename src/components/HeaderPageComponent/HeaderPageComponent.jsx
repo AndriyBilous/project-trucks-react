@@ -1,7 +1,23 @@
 import "./HeaderPageComponent.css";
 import logo from "../../assets/logo.svg";
+import { useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 function HeaderPageComponent() {
+  const [navigationHover, setNavigationHover] = useState("");
+  const boxRef = useRef();
+
+  useEffect(() => {}, [navigationHover, setNavigationHover]);
+
+  const handleMouseEnter = () => {
+    boxRef.current.style.overflow = "visible";
+  };
+
+  const handleMouseLeave = () => {
+    boxRef.current.style.overflow = "hidden";
+  };
+
   return (
     <div className="header__container">
       <div className="left-side__container">
@@ -35,28 +51,33 @@ function HeaderPageComponent() {
         </div>
         <div className="navigation__container">
           <nav className="header__panel__nav">
-            <button className="header__button button">
+            <button className="header__button header__button-first">
               <p>Головна</p>
             </button>
-            <button className="header__button button">
+            <button className="header__button">
               <p>Продаж техніки</p>
             </button>
-            <div className="header__dropdown">
-              <button className="header__button dropdown__button button button__menu">
-                <p>
+            <div
+              className="header__dropdown"
+              ref={boxRef}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <button className="header__button dropdown__button">
+                <div>
                   Послуги<i className="arrow down"></i>
-                </p>
+                </div>
               </button>
-              {/* <div className="dropdown__content">
-                <a href="#">
+              <div className="dropdown__content">
+                <a href="#" className="dropdown__link">
                   <p>Довідка рахунок</p>
                 </a>
-                <a href="#">
+                <a href="#" className="dropdown__link">
                   <p>Продаж Т/П</p>
                 </a>
-              </div> */}
+              </div>
             </div>
-            <button className="header__button header__button-last button">
+            <button className="header__button header__button-last">
               <p>Контакти</p>
             </button>
           </nav>

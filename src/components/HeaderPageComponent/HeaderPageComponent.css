@@ -57,7 +57,7 @@
   border: #000000 solid 1px;
   border-radius: 10px;
   /* background-color: #f7f7f7; */
-  /* background: linear-gradient(rgb(67, 104, 56), #f8f8f8 20%); */
+  background: linear-gradient(215deg, rgb(67, 104, 56), #33ff0049 50%);
 }
 
 .contacts__item {
@@ -66,6 +66,11 @@
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  color: #000000;
+}
+
+.contacts__item:hover {
+  color: #000000;
 }
 
 .contacts__item:last-child {

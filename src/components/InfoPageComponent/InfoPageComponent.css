@@ -44,6 +44,7 @@
 
 @media (max-width: 800px) {
   .infoPage__container {
+    margin-top: 75px;
     width: 640px;
   }
 

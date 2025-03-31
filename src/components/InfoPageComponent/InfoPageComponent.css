@@ -42,7 +42,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 799.9px) {
   .infoPage__container {
     margin-top: 75px;
     width: 640px;

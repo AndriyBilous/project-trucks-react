@@ -93,7 +93,12 @@ function HeaderPageComponent({
                   <p>Продаж техніки</p>
                 </button>
                 <button
-                  className="header__button dropdown__button"
+                  // className="header__button dropdown__button"
+                  className={
+                    dropdownVisibility
+                      ? "header__button dropdown__button dropdown__button-active"
+                      : "header__button dropdown__button"
+                  }
                   onClick={handleMouseOnClickNavBar}
                 >
                   <div>

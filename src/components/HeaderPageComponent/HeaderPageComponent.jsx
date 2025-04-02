@@ -31,12 +31,10 @@ function HeaderPageComponent({
     }
 
     if (!navBarVisibility && size[0] < 800) {
-      console.log(navBarVisibility + "  handleMouseOnClickNavBarButton");
+      // console.log(navBarVisibility + "  handleMouseOnClickNavBarButton");
       navigationBarMobileRef.current.style.display = "none";
     }
   }, [size[0], navBarVisibility]);
-
-  // useEffect(() => {}), [navBarVisibility];
 
   const handleMouseEnter = () => {
     headerDropdownRef.current.style.overflow = "visible";
@@ -51,10 +49,10 @@ function HeaderPageComponent({
     setNavBackgroundVisibility(!navBackgroundVisibility);
 
     if (navBarVisibility) {
-      console.log(navBarVisibility + "  handleMouseOnClickNavBarButton");
+      // console.log(navBarVisibility + "  handleMouseOnClickNavBarButton");
       navigationBarMobileRef.current.style.display = "none";
     } else {
-      console.log(navBarVisibility + " handleMouseOnClickNavBarButton");
+      // console.log(navBarVisibility + " handleMouseOnClickNavBarButton");
       navigationBarMobileRef.current.style.display = "flex";
     }
   };
@@ -63,10 +61,10 @@ function HeaderPageComponent({
     setDropdownVisibility(() => !dropdownVisibility);
 
     if (dropdownVisibility) {
-      console.log(dropdownVisibility);
+      // console.log(dropdownVisibility);
       dropdownContentRef.current.style.display = "none";
     } else {
-      console.log(dropdownVisibility);
+      // console.log(dropdownVisibility);
       dropdownContentRef.current.style.display = "flex";
     }
   };

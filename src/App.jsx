@@ -15,11 +15,11 @@ function App() {
     if (!navBackgroundVisibility) {
       navBackgroundRef.current.style.display = "none";
       // setNavBarVisibility(false);
-      console.log("background1: " + navBackgroundVisibility);
-      console.log("navBarVisibility: " + navBarVisibility);
+      // console.log("background1: " + navBackgroundVisibility);
+      // console.log("navBarVisibility: " + navBarVisibility);
     } else {
       navBackgroundRef.current.style.display = "flex";
-      console.log("background2: " + navBackgroundVisibility);
+      // console.log("background2: " + navBackgroundVisibility);
     }
   }, [navBackgroundVisibility]);
 
@@ -28,7 +28,7 @@ function App() {
 
     if (navBackgroundVisibility === true) {
       setNavBarVisibility(false);
-      console.log("click on background: " + navBarVisibility);
+      // console.log("click on background: " + navBarVisibility);
     }
   };
 

@@ -1,5 +1,5 @@
 .infoPage__container {
-  background-color: #877c7c;
+  background-color: #ffffff;
   width: 1400px;
   z-index: 1;
 }
@@ -60,6 +60,40 @@
 
 .green {
   background-color: #3c863a;
+}
+
+.aboutUs__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 600px;
+}
+
+.aboutUs__leftSide__container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs__rightSide__container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutUs__leftSide-title {
+}
+
+.aboutUs__leftSide-text {
+  padding: 0 60px;
+}
+
+.aboutUsImg {
+  max-height: 90%;
+  max-width: 100%;
 }
 
 @media (max-width: 1399.9px) {

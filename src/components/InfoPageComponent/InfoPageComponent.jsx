@@ -3,6 +3,7 @@ import sliderImg1 from "../../assets/slider-images/main_page_slider_screen-01.jp
 import sliderImg2 from "../../assets/slider-images/main_page_slider_screen-05.jpg";
 import sliderImg3 from "../../assets/slider-images/main_page_slider_screen-06.jpg";
 import sliderImg4 from "../../assets/slider-images/main_page_slider_screen-07.jpg";
+import aboutUsImg from "../../assets/about_us_01.jpg";
 import SliderComponent from "../SliderComponent/SliderComponent";
 // import { useState } from "react";
 // import { useEffect } from "react";
@@ -16,23 +17,24 @@ function InfoPageComponent() {
 
   return (
     <div className="infoPage__container">
-      {/* <div className="slider__container"> */}
-      {/* {imgContainer.map((image, index) => {
-          return (
-            <img
-              src={image}
-              alt="slider-img"
-              key={index}
-              className="slider-img"
-            />
-          );
-        })} */}
-      <div className="slider__container">
+      <div className="slider__container green">
         <SliderComponent imgArray={imgContainer} />
       </div>
       <hr />
-      {/* </div> */}
-      <div className="bloks green">InfoBlock</div>
+      <div className="aboutUs__container">
+        <div className="aboutUs__leftSide__container">
+          <h2 className="aboutUs__leftSide-title">Про нас</h2>
+          <p className="aboutUs__leftSide-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            ipsa provident hic soluta adipisci, quasi laudantium corporis
+            tempora sequi cumque, enim voluptatem autem natus dicta libero,
+            culpa omnis est nulla.
+          </p>
+        </div>
+        <div className="aboutUs__rightSide__container">
+          <img src={aboutUsImg} alt="aboutUsImg" className="aboutUsImg" />
+        </div>
+      </div>
       <hr />
       <div className="bloks yellow">InfoBlock</div>
     </div>

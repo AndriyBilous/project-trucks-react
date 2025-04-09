@@ -4,6 +4,7 @@ import sliderImg2 from "../../assets/slider-images/main_page_slider_screen-05.jp
 import sliderImg3 from "../../assets/slider-images/main_page_slider_screen-06.jpg";
 import sliderImg4 from "../../assets/slider-images/main_page_slider_screen-07.jpg";
 import aboutUsImg from "../../assets/about_us_01.jpg";
+import serviseItemImg from "../../assets/1.png";
 import SliderComponent from "../SliderComponent/SliderComponent";
 // import { useState } from "react";
 // import { useEffect } from "react";
@@ -36,7 +37,62 @@ function InfoPageComponent() {
         </div>
       </div>
       <hr />
-      <div className="bloks yellow">InfoBlock</div>
+      <div className="servises__container yellow">
+        <h2 className="servises-label">Сервіси</h2>
+        <p className="servises-text">
+          Наша компанія надає різноманітні сервіси пов'язані з покупкою або з
+          обслуговуванням техніки
+        </p>
+        <div className="servises-list__container">
+          {/* TODO
+          Make servises-item__container component instead of div list
+          */}
+          <div className="servises-item__container">
+            <img
+              src={serviseItemImg}
+              alt="itemImg"
+              className="servises-item__img"
+            />
+            <div className="servises-item-text__container">
+              <h3 className="servises-item-label">item label</h3>
+              <div className="servises-item-text">item text</div>
+            </div>
+          </div>
+          <div className="servises-item__container">
+            <img
+              src={serviseItemImg}
+              alt="itemImg"
+              className="servises-item__img"
+            />
+            <div className="servises-item-text__container">
+              <h3 className="servises-item-label">item label</h3>
+              <div className="servises-item-text">item text</div>
+            </div>
+          </div>
+          <div className="servises-item__container">
+            <img
+              src={serviseItemImg}
+              alt="itemImg"
+              className="servises-item__img"
+            />
+            <div className="servises-item-text__container">
+              <h3 className="servises-item-label">item label</h3>
+              <div className="servises-item-text">item text</div>
+            </div>
+          </div>
+          <div className="servises-item__container">
+            <img
+              src={serviseItemImg}
+              alt="itemImg"
+              className="servises-item__img"
+            />
+            <div className="servises-item-text__container">
+              <h3 className="servises-item-label">item label</h3>
+              <div className="servises-item-text">item text</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

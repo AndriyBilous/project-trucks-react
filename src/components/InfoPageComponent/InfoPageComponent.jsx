@@ -5,7 +5,9 @@ import sliderImg3 from "../../assets/slider-images/main_page_slider_screen-06.jp
 import sliderImg4 from "../../assets/slider-images/main_page_slider_screen-07.jpg";
 import aboutUsImg from "../../assets/about_us_01.jpg";
 import serviseItemImg from "../../assets/1.png";
+
 import SliderComponent from "../SliderComponent/SliderComponent";
+import Iframe from "react-iframe";
 // import { useState } from "react";
 // import { useEffect } from "react";
 
@@ -91,6 +93,26 @@ function InfoPageComponent() {
               <div className="servises-item-text">item text</div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="references__container">
+        <div className="references-text__container">
+          <h2 className="references-label">Наша адреса</h2>
+          <p className="references-text">
+            Село Гавронщина, Київська область, вулиця Шевченка 18
+          </p>
+          <p className="references-telephone">Наш телефон: +38(050)3333333</p>
+        </div>
+        <div className="references-map">
+          <Iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10155.107480001829!2d29.8637248!3d50.4824975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4300de87c6432718!2z0KLQntCSICfQnNCR0Jog0JzQkNCa0JDQoNCG0JIn!5e0!3m2!1sru!2sua!4v1662194663745!5m2!1sru!2sua"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            className="contact__map"
+          />
         </div>
       </div>
     </div>

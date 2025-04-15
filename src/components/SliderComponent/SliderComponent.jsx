@@ -16,14 +16,9 @@ function SliderComponent({ imgArray }) {
     <Slider {...settings}>
       {imgArray.map((image, index) => {
         return (
-          <div>
+          <div key={index}>
             <div className="slider-img__container">
-              <img
-                src={image}
-                alt={"slide-" + index}
-                key={index}
-                className="slider-img"
-              />
+              <img src={image} alt={"slide-" + index} className="slider-img" />
             </div>
           </div>
         );

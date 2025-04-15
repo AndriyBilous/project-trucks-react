@@ -109,7 +109,8 @@
 
 .servises-text {
   align-self: flex-end;
-  margin-right: 50px;
+  margin: 0 50px;
+  text-align: justify;
 }
 
 .servises-list__container {
@@ -142,6 +143,44 @@
   text-align: left;
 }
 
+.references__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #4d6133;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.references-text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  width: 50%;
+}
+
+.references-text {
+}
+
+.references-telephone {
+}
+
+.references-map {
+  width: 40%;
+  margin: 20px auto;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__map {
+  width: 100%;
+}
+
 @media (max-width: 1399.9px) {
   .infoPage__container {
     width: 1250px;
@@ -158,6 +197,29 @@
   .infoPage__container {
     width: 800px;
   }
+
+  .aboutUs__container {
+    height: 400px;
+  }
+
+  .references__container {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .references-text__container {
+    width: 100%;
+  }
+
+  .references-text {
+  }
+
+  .references-telephone {
+  }
+
+  .references-map {
+    width: 80%;
+  }
 }
 
 @media (max-width: 799.9px) {
@@ -165,17 +227,53 @@
     margin-top: 75px;
     width: 640px;
   }
+
+  .aboutUs__container {
+    height: 300px;
+  }
 }
 
 @media (max-width: 639.9px) {
   .infoPage__container {
     width: 560px;
   }
+
+  /* .references__container {
+    height: 600px;
+  } */
+
+  .contact__map {
+    height: 400px;
+  }
+
+  .references-map {
+    height: 440px;
+  }
 }
 
 @media (max-width: 559.9px) {
   .infoPage__container {
     width: 500px;
+  }
+
+  .aboutUs__leftSide-text {
+    padding: 0 30px;
+  }
+
+  .servises-list__container {
+    justify-content: center;
+  }
+
+  .servises-item__container {
+    width: 60%;
+  }
+
+  .references-text {
+    margin: 0 50px;
+  }
+
+  .contact__map {
+    height: 400px;
   }
 }
 
@@ -188,6 +286,10 @@
 @media (max-width: 429.9px) {
   .infoPage__container {
     width: 400px;
+  }
+
+  .aboutUs__leftSide-text {
+    padding: 0 15px;
   }
 }
 

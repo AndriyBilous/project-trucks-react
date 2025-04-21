@@ -4,6 +4,9 @@ import HeaderPageComponent from "./components/HeaderPageComponent/HeaderPageComp
 import InfoPageComponent from "./components/InfoPageComponent/InfoPageComponent";
 import FooterPageComponent from "./components/FooterPageComponent/FooterPageComponent";
 import { useEffect, useRef, useState } from "react";
+import ProductsPageComponent from "./components/ProductsPageComponent/ProductPageComponent";
+import SalePageComponent from "./components/SalePageComponent/SalePageComponent";
+import { Route, Routes } from "react-router";
 
 function App() {
   const [navBackgroundVisibility, setNavBackgroundVisibility] = useState(false);
@@ -14,12 +17,8 @@ function App() {
   useEffect(() => {
     if (!navBackgroundVisibility) {
       navBackgroundRef.current.style.display = "none";
-      // setNavBarVisibility(false);
-      // console.log("background1: " + navBackgroundVisibility);
-      // console.log("navBarVisibility: " + navBarVisibility);
     } else {
       navBackgroundRef.current.style.display = "flex";
-      // console.log("background2: " + navBackgroundVisibility);
     }
   }, [navBackgroundVisibility]);
 
@@ -28,7 +27,6 @@ function App() {
 
     if (navBackgroundVisibility === true) {
       setNavBarVisibility(false);
-      // console.log("click on background: " + navBarVisibility);
     }
   };
 
@@ -45,7 +43,12 @@ function App() {
         navBarVisibility={navBarVisibility}
         setNavBarVisibility={setNavBarVisibility}
       />
-      <InfoPageComponent />
+
+      <Routes>
+        <Route path="*" element={<InfoPageComponent />} />
+        <Route path="/salePage" element={<SalePageComponent />} />
+      </Routes>
+
       <FooterPageComponent />
     </div>
   );

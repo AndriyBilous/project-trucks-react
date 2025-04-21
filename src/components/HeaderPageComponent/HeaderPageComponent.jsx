@@ -8,6 +8,8 @@ import viber from "../../assets/viber.svg";
 import telephone from "../../assets/telephone.svg";
 import mail from "../../assets/mail.svg";
 import useResize from "../hooks/useResize";
+import { Link } from "react-router";
+// import { useNavigate } from "react-router-dom";
 
 function HeaderPageComponent({
   setNavBackgroundVisibility,
@@ -23,6 +25,8 @@ function HeaderPageComponent({
   const headerDropdownRef = useRef();
   const dropdownContentRef = useRef();
   const navigationBarMobileRef = useRef();
+
+  // const navigate = useNavigate();
 
   useEffect(() => {
     if (size[0] >= 800 && navBarVisibility) {
@@ -200,17 +204,20 @@ function HeaderPageComponent({
               <div className="adress__container">
                 <p>
                   Наша адреса: Село Гавронщина, Київська область <br />
-                  вулиця Шевченка 18 {size[0]} {size[1]}
+                  вулиця Шевченка 18
                 </p>
               </div>
               <div className="navigation__container">
                 <nav className="header__panel__nav">
-                  <button className="header__button header__button-first">
-                    <p>Головна</p>
-                  </button>
-                  <button className="header__button">
-                    <p>Продаж техніки</p>
-                  </button>
+                  <Link
+                    to="/"
+                    className="header__button header__button-first header__link"
+                  >
+                    <p className="navigation-text">Головна</p>
+                  </Link>
+                  <Link to="/salePage" className="header__button header__link">
+                    <p className="navigation-text">Продаж техніки</p>
+                  </Link>
                   <div
                     className="header__dropdown"
                     ref={headerDropdownRef}
@@ -224,15 +231,15 @@ function HeaderPageComponent({
                     </button>
                     <div className="dropdown__content">
                       <a href="#" className="dropdown__link">
-                        <p>Довідка рахунок</p>
+                        <p className="navigation-text">Довідка рахунок</p>
                       </a>
                       <a href="#" className="dropdown__link">
-                        <p>Продаж Т/П</p>
+                        <p className="navigation-text">Продаж Т/П</p>
                       </a>
                     </div>
                   </div>
                   <button className="header__button header__button-last">
-                    <p>Контакти</p>
+                    <p className="navigation-text">Контакти</p>
                   </button>
                 </nav>
               </div>

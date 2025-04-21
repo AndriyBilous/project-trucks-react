@@ -144,8 +144,17 @@
   color: #fff;
 }
 
+.header__link {
+  height: 38px;
+  color: #000000;
+}
+
 .dropdown__button {
   width: -webkit-fill-available;
+}
+
+.navigation-text {
+  padding: 0 10px;
 }
 
 .header__dropdown {
@@ -252,6 +261,10 @@
     height: 50px;
     min-width: unset;
     /* padding: 5px 0; */
+  }
+
+  .header__link {
+    height: 48px;
   }
 
   .header__dropdown {

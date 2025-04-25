@@ -197,7 +197,7 @@ function HeaderPageComponent({
                   <a href="tel:+380503333333" className="contacts__item">
                     {/* <i className=""></i> */}
                     <img src={telephone} alt="telephone_logo" />
-                    <p>+38(050) 333 33 33</p>
+                    <p>+38 (050) 333 33 33</p>
                   </a>
                 </div>
               </div>

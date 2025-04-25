@@ -52,6 +52,7 @@ const data = [
 function SalePageComponent() {
   return (
     <div className="salesPage__container">
+      <button className="filter-button">Фільтр</button>
       {data.map((el, i) => {
         return (
           <div className="product__container" key={i}>

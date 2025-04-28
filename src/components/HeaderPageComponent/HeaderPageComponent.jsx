@@ -50,7 +50,7 @@ function HeaderPageComponent({
 
   const handleMouseOnClickNavBarButton = () => {
     setNavBarVisibility(() => !navBarVisibility);
-    setNavBackgroundVisibility(!navBackgroundVisibility);
+    setNavBackgroundVisibility(() => !navBackgroundVisibility);
 
     if (navBarVisibility) {
       // console.log(navBarVisibility + "  handleMouseOnClickNavBarButton");

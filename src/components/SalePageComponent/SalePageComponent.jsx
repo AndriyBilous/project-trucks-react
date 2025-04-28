@@ -1,5 +1,6 @@
 import "./SalePageComponent.css";
 import trackImg from "../../assets/Daf-truck.png";
+import { useState } from "react";
 
 const data = [
   {
@@ -50,9 +51,45 @@ const data = [
 ];
 
 function SalePageComponent() {
+  const [filterAppearance, setFilterAppearance] = useState(false);
+  console.log(filterAppearance);
+  const handleOnClickFIlterAppearanceButton = () => {
+    setFilterAppearance(() => !filterAppearance);
+    console.log(filterAppearance);
+  };
+
   return (
     <div className="salesPage__container">
-      <button className="filter-button">Фільтр</button>
+      {!filterAppearance && (
+        <button
+          onClick={handleOnClickFIlterAppearanceButton}
+          className="filter-button"
+        >
+          Фільтр
+        </button>
+      )}
+      {filterAppearance && (
+        <div className="filter__container">
+          <div className="filter-categories__container">
+            <ul>
+              <li>фильтр 1</li>
+              <li>фильтр 2</li>
+              <li>фильтр 3</li>
+              <li>фильтр 4</li>
+              <li>фильтр 5</li>
+              <li>фильтр 6</li>
+              <li>фильтр 7</li>
+              <li>фильтр 8</li>
+            </ul>
+          </div>
+          <button
+            onClick={handleOnClickFIlterAppearanceButton}
+            className="filter-button__inner"
+          >
+            Згорнути
+          </button>
+        </div>
+      )}
       {data.map((el, i) => {
         return (
           <div className="product__container" key={i}>
